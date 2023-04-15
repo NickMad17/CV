@@ -267,3 +267,9 @@ body{
         display: block;
     }
 }
+
+@media(max-width: 500px){
+    .home-img img{
+        max-width: 300px;
+    }
+}
