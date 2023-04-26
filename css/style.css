@@ -57,6 +57,7 @@ body{
 
 .navbar a.menu{
     display: none;
+    opacity: 0;
 }
 
 .navbar a:hover,
