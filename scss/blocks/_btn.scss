@@ -1,0 +1,22 @@
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main_two-color);
+    box-shadow: 0 0 1rem var(--main-coloor);
+    font-size: 16px;
+    color: var(--second-bg-color);
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 10px;
+
+    transition: 0.3s;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+}
+
+
+.btn:hover{
+    box-shadow: none;
+    cursor: pointer;
+}
