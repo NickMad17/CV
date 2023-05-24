@@ -50,3 +50,16 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home__content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home__img, .services__container, .portfolio__box, .contact__form', { origin: 'bottom' });
+ScrollReveal().reveal('.home__content h1, .about__img', { origin: 'left' });
+ScrollReveal().reveal('.home__content p, .about__content', { origin: 'right' });
+
+/* -------------------- Type js ------------------------- */
+
+const typed = new Typed('.multiple-text', {
+    strings: ['Frontend develuper', 'Beatmaker', 'Microcontroller Programmer'],
+    typeSpeed: 100,
+    backSpeed:100,
+    backDelay:1000,
+    loop: true
+});

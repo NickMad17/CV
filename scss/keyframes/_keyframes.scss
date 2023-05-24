@@ -1,7 +1,7 @@
 // @keyframes slideRight {
 //     0% {
 //         transform: translateX(-100px);
-//         opacity: 0;
+//         
 //     }
 
 //     100% {
@@ -13,7 +13,7 @@
 // @keyframes slideLeft {
 //     0% {
 //         transform: translateX(100px);
-//         opacity: 0;
+//         
 //     }
 
 //     100% {
@@ -25,7 +25,7 @@
 // @keyframes slideTop {
 //     0% {
 //         transform: translateY(100px);
-//         opacity: 0;
+//         
 //     }
 
 //     100% {
@@ -37,7 +37,7 @@
 // @keyframes slideBottom {
 //     0% {
 //         transform: translateY(-100px);
-//         opacity: 0;
+//         
 //     }
 
 //     100% {
@@ -55,3 +55,17 @@
 //         background: rgb(38, 6, 68);
 //     }
 // }
+
+@keyframes flyImage{
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

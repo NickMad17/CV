@@ -75,7 +75,6 @@ span {
   font-weight: 600;
   cursor: default;
   text-decoration: none;
-  opacity: 0;
   -webkit-animation: slideRight 1s ease forwards;
           animation: slideRight 1s ease forwards;
 }
@@ -92,7 +91,6 @@ span {
   margin-left: 4rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  opacity: 0;
   -webkit-animation: slideTop 0.5s ease forwards;
           animation: slideTop 0.5s ease forwards;
   -webkit-animation-delay: calc(0.1s * var(--i));
@@ -103,7 +101,6 @@ span {
   font-size: 3.6rem;
   color: var(--text-color);
   display: none;
-  opacity: 0;
   -webkit-animation: slideBottom 0.5s ease forwards;
           animation: slideBottom 0.5s ease forwards;
 }
@@ -154,7 +151,6 @@ span {
   margin: 30px 15px 30px 0;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
-  opacity: 0;
   -webkit-animation: slideLeft 1s ease forwards;
           animation: slideLeft 1s ease forwards;
   -webkit-animation-delay: calc(0.2s * var(--i));
@@ -230,16 +226,11 @@ span {
 .home__content h2 {
   font-size: 3.2rem;
   font-weight: 700;
-  opacity: 0;
-  -webkit-animation: slideBottom 1s ease forwards;
-          animation: slideBottom 1s ease forwards;
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
 .home__content h2:nth-of-type(2) {
   margin-bottom: 3rem;
-  -webkit-animation: slideTop 1s ease forwards;
-          animation: slideTop 1s ease forwards;
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
@@ -247,7 +238,6 @@ span {
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.3;
-  opacity: 0;
   -webkit-animation: slideLeft 1s ease forwards;
           animation: slideLeft 1s ease forwards;
   -webkit-animation-delay: 1s;
@@ -255,7 +245,6 @@ span {
 }
 .home__content p {
   font-size: 1.6rem;
-  opacity: 0;
   -webkit-animation: slideRight 1s ease forwards;
           animation: slideRight 1s ease forwards;
   -webkit-animation-delay: 1s;
@@ -264,18 +253,8 @@ span {
 .home__img img {
   margin-right: -20px;
   max-width: 45rem;
-  opacity: 0;
-  -webkit-animation: slideBottom 1s ease forwards;
-          animation: slideBottom 1s ease forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-.home__btn {
-  opacity: 0;
-  -webkit-animation: slideTop 1s ease forwards;
-          animation: slideTop 1s ease forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation: flyImage 4s ease-in-out infinite;
+          animation: flyImage 4s ease-in-out infinite;
 }
 
 .about {
@@ -638,5 +617,33 @@ span {
   .about img {
     width: 43vh;
     margin-top: 4rem;
+  }
+}
+@-webkit-keyframes flyImage {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-2.4rem);
+            transform: translateY(-2.4rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes flyImage {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-2.4rem);
+            transform: translateY(-2.4rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
