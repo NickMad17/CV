@@ -515,6 +515,15 @@ span {
   .footer {
     padding: 2rem 3%;
   }
+  .services {
+    padding-bottom: 7rem;
+  }
+  .portfolio {
+    padding-bottom: 7rem;
+  }
+  .contact {
+    min-height: auto;
+  }
 }
 @media (max-width: 768px) {
   #menu-icon {
@@ -540,119 +549,94 @@ span {
     font-size: 2rem;
     margin: 3rem 0;
   }
+  .home {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home__content h3 {
+    font-style: 2.6rem;
+  }
+  .home__content h1 {
+    font-size: 5rem;
+  }
+  .home__img img {
+    width: 70vh;
+    margin-top: 4rem;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about img {
+    width: 70vh;
+    margin-top: 4rem;
+  }
+  .services h2 {
+    margin-bottom: 3rem;
+  }
+  .portfolio h2 {
+    margin-bottom: 3rem;
+  }
   .portfolio__container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@-webkit-keyframes slideRight {
-  0% {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-    opacity: 0;
+@media (max-width: 617px) {
+  .about img {
+    width: 50vh;
   }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
+  .portfolio__container {
+    grid-template-columns: 1fr;
   }
-}
-@keyframes slideRight {
-  0% {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
+  .portfolio__box {
+    height: 42rem;
   }
 }
-@-webkit-keyframes slideLeft {
-  0% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-    opacity: 0;
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
   }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
+  .home__img img {
+    width: 50vh;
+    margin-right: 0;
   }
-}
-@keyframes slideLeft {
-  0% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-    opacity: 0;
+  .contact__form .input-box input {
+    width: 100%;
   }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
+  .portfolio__box {
+    height: 35rem;
   }
 }
-@-webkit-keyframes slideTop {
-  0% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-    opacity: 0;
+@media (max-width: 378px) {
+  .home__img img {
+    width: 50vh;
+    margin-right: 0;
   }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
-}
-@keyframes slideTop {
-  0% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
-    opacity: 0;
+  .footer p {
+    text-align: center;
+    margin-top: 2rem;
   }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
+  .portfolio__box {
+    height: 27rem;
   }
 }
-@-webkit-keyframes slideBottom {
-  0% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-    opacity: 0;
+@media (max-width: 340px) {
+  .home__img img {
+    width: 40vh;
+    margin-right: 0;
   }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes slideBottom {
-  0% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes colorReplase {
-  0% {
-    background: rgb(32, 10, 52);
-  }
-  100% {
-    background: rgb(38, 6, 68);
-  }
-}
-@keyframes colorReplase {
-  0% {
-    background: rgb(32, 10, 52);
-  }
-  100% {
-    background: rgb(38, 6, 68);
+  .about img {
+    width: 43vh;
+    margin-top: 4rem;
   }
 }

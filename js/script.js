@@ -23,13 +23,30 @@ window.onscroll = () => {
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            } );
+            });
         };
     });
 
-/* -------------------- Sticky header ------------------------- */
+    /* -------------------- Sticky header ------------------------- */
 
     let header = document.querySelector('header');
 
     header.classList.toggle('sticky', window.scrollY > 100);
+
+    /* -------------------- Remove toggle icon and navbar when cklick navbar linck (scroll)------------------------- */
+
+    menuIcon.classList.remove('bx-x')
+    navbar.classList.remove('active')
+
 };
+
+/* -------------------- Scroll reveal------------------------- */
+
+ScrollReveal({ 
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.home__content, .heading', { origin: 'top' });

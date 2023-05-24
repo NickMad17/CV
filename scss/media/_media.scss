@@ -16,6 +16,18 @@
     .footer{
         padding: 2rem 3%;
     }
+
+    .services{
+        padding-bottom: 7rem;
+    }
+
+    .portfolio{
+        padding-bottom: 7rem;
+    }
+
+    .contact{
+        min-height: auto;
+    }
 }
 
 @media(max-width: 768px){
@@ -46,10 +58,145 @@
 
     }
 
+    .home{
+        flex-direction: column;
+        &__content{
+            & h3{
+                font-style: 2.6rem;
+            }
+
+            & h1{
+                font-size: 5rem;
+            }
+        }
+
+        &__img{
+            & img{
+                width: 70vh;
+                margin-top: 4rem;
+            }
+        }
+    }
+
+    .about{
+        flex-direction: column-reverse ;
+
+        & img{
+            width: 70vh;
+            margin-top: 4rem;
+        }
+    }
+
+    .services{
+        & h2{
+            margin-bottom: 3rem;
+        }
+    }
+
     .portfolio{
+
+        & h2{
+            margin-bottom: 3rem;
+        }
         &__container{
             grid-template-columns: repeat(2,1fr);
         }
     }
 
+}
+
+@media(max-width: 617px){
+
+    .about{
+        & img{
+            width: 50vh;
+        }
+    }
+
+    .portfolio{
+        &__container{
+            grid-template-columns: 1fr;
+        }
+
+        &__box{
+            height: 42rem;
+        }
+    }
+}
+
+@media(max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+
+    .home{
+        &__img{
+            img{
+                width: 50vh;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .contact{
+        &__form{
+            & .input-box{
+                & input{
+                    width: 100%;
+                } 
+            }
+        }
+    }
+
+    .portfolio{
+
+        &__box{
+            height: 35rem;
+        }
+    }
+}
+
+@media(max-width: 378px){
+    .home{
+        &__img{
+            img{
+                width: 50vh;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .footer{
+        flex-direction: column-reverse;
+        & p{
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+
+    .portfolio{
+
+        &__box{
+            height: 27rem;
+        }
+    }
+}
+
+@media(max-width: 340px){
+    .home{
+        &__img{
+            img{
+                width: 40vh;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .about{
+
+        & img{
+            width: 43vh;
+            margin-top: 4rem;
+        }
+    }
 }
