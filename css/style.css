@@ -394,8 +394,8 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(var(--main-color)));
-  background: linear-gradient(rgba(0, 0, 0, 0.4), var(--main-color));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(var(--bg-color)));
+  background: linear-gradient(rgba(0, 0, 0, 0.4), var(--bg-color));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,13 +418,16 @@ span {
 }
 .portfolio__anotation h4 {
   font-size: 3rem;
+  color: var(--main_two-color);
 }
 .portfolio__anotation p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin: 0.3rem 0 1rem;
 }
 .portfolio__anotation a {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -440,7 +443,6 @@ span {
   font-size: 2rem;
   color: var(--second-bg-color);
   text-align: center;
-  padding-top: 1.5rem;
 }
 
 .contact h2 {
