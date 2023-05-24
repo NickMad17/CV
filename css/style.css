@@ -292,7 +292,7 @@ span {
   background: var(--second-bg-color);
 }
 .about__img img {
-  width: 75vh;
+  width: 65vh;
 }
 .about__content h2 {
   text-align: left;
@@ -539,6 +539,9 @@ span {
     display: block;
     font-size: 2rem;
     margin: 3rem 0;
+  }
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @-webkit-keyframes slideRight {
