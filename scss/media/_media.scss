@@ -30,6 +30,12 @@
     }
 }
 
+@media (max-width: 864px){
+    .about{
+        flex-direction: column-reverse ;
+    }
+}
+
 @media(max-width: 768px){
     #menu-icon{
         display: block;
@@ -82,7 +88,7 @@
         flex-direction: column-reverse ;
 
         & img{
-            width: 70vh;
+            width: 50vh;
             margin-top: 4rem;
         }
     }
