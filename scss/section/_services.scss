@@ -21,14 +21,14 @@
         transition: .5s ease;
 
         &:hover{
-            border-color: var(--main-coloor);
+            border-color: var(--main-color);
             transform: scale(0.98);
             cursor: pointer;     
         }
 
         & i{
             font-size: 7rem;
-            color: var(--main-coloor)
+            color: var(--main-color)
         }
 
         & h3{

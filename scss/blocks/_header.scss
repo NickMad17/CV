@@ -10,6 +10,10 @@
     align-items: center;
     z-index: 100;
     animation: colorReplase 3s ease forwards;
+
+    &.sticky{
+        border-bottom: .1rem solid rgba(0, 0, 0, 0.447);
+    }
 }
 
 
@@ -45,9 +49,11 @@
     color: var(--text-color); 
     display: none;
     opacity: 0;
+    animation: slideBottom .5s ease forwards;
+    
 }
 
 .navbar a:hover,
 .navbar a.active{
-    color: var(--main-coloor);
+    color: var(--main-color);
 }

@@ -17,7 +17,7 @@
     animation-delay: calc(.2s * var(--i)) ;
 }
 .social-media a:hover{
-    background: var(--main-coloor) ;
+    background: var(--main-color) ;
     color: var(--bg-color);
-    box-shadow: 0 0 1rem var(--main-coloor);
+    box-shadow: 0 0 1rem var(--main-color);
 }

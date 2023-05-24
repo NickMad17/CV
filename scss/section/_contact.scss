@@ -1,0 +1,54 @@
+.contact{
+    & h2{
+        margin-bottom: 3rem;
+    }
+
+    &__form{
+        max-width: 70rem;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3rem;
+
+        & .input-box{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; 
+            
+            & input {
+                width: 49%;
+                padding: 1.5rem;
+                font-style: 1.6rem;
+                color: var(--text-color);
+                background: var(--second-bg-color);
+                border-radius: .8rem;
+                margin: 0.7rem 0;
+            }
+        }
+
+        & textarea{
+            width: 100%;
+            padding: 1.5rem;
+            color: var(--text-color);
+            background: var(--second-bg-color);
+            border-radius: .8rem;
+            margin: 0.7rem 0;
+            font-style: 1.6rem;
+            resize: none;
+        }
+    }
+
+    &__btn{
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+
+    &__consent{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+
+        & p{
+            font-size: 1.2rem;
+        }
+    }
+}

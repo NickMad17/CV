@@ -48,12 +48,18 @@
     &__img{
         & img{
             margin-right: -20px;
-            max-width: 450px;
+            max-width: 45rem;
         
             opacity: 0;
             animation: slideBottom 1s ease forwards;
             animation-delay: 2s;
         }
+    }
+
+    &__btn{
+        opacity: 0;
+        animation: slideTop 1s ease forwards;
+        animation-delay: 2s;
     }
     
 }
