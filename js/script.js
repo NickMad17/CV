@@ -43,6 +43,10 @@ window.onscroll = () => {
 /* -------------------- Scroll reveal------------------------- */
 
 ScrollReveal({ 
+<<<<<<< HEAD
+=======
+//  reset: true
+>>>>>>> 43364f3c09c1261946f8aa83002e396b92169888
     distance: '80px',
     duration: 2000,
     delay: 200
