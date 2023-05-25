@@ -43,16 +43,14 @@ window.onscroll = () => {
 /* -------------------- Scroll reveal------------------------- */
 
 ScrollReveal({ 
-//  reset: true
+    //reset: true
     distance: '80px',
     duration: 2000,
     delay: 200
 });
 
-ScrollReveal().reveal('.home__content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home__img, .services__container, .portfolio__box, .contact__form', { origin: 'bottom' });
-ScrollReveal().reveal('.home__content h1, .about__img', { origin: 'left' });
-ScrollReveal().reveal('.home__content p, .about__content', { origin: 'right' });
+ScrollReveal().reveal('.home__content, .heading, .about__img, .about__content', { origin: 'top' });
+ScrollReveal().reveal('.home__img, .about__content, .services__container, .portfolio__box, .contact__form', { origin: 'bottom' });
 
 /* -------------------- Type js ------------------------- */
 
