@@ -206,3 +206,22 @@
         }
     }
 }
+
+@media(max-width: 300px){
+    .about{
+
+        & img{
+            width: 35vh;
+            margin-top: 4rem;
+        }
+    }
+
+    .home{
+        &__img{
+            img{
+                width: 35vh;
+                margin-right: 0;
+            }
+        }
+    }
+}

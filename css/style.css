@@ -627,6 +627,16 @@ span {
     margin-top: 4rem;
   }
 }
+@media (max-width: 300px) {
+  .about img {
+    width: 35vh;
+    margin-top: 4rem;
+  }
+  .home__img img {
+    width: 35vh;
+    margin-right: 0;
+  }
+}
 @-webkit-keyframes flyImage {
   0% {
     -webkit-transform: translateY(0);
