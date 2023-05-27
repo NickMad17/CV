@@ -346,13 +346,16 @@ span {
 .portfolio__box {
   position: relative;
   border-radius: 2rem;
-  -webkit-box-shadow: 0 0 1rem var(--bg-color);
-          box-shadow: 0 0 1rem var(--bg-color);
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 25rem;
+}
+.portfolio__box:hover {
+  -webkit-box-shadow: 0 0 1rem var(--main-color);
+          box-shadow: 0 0 1rem var(--main-color);
+  cursor: pointer;
 }
 .portfolio__box:hover img {
   -webkit-transform: scale(1.1);
@@ -583,7 +586,7 @@ span {
     height: 42rem;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 470px) {
   html {
     font-size: 50%;
   }

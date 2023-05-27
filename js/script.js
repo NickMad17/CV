@@ -55,7 +55,7 @@ ScrollReveal().reveal('.home__img, .about__content, .services__container, .portf
 /* -------------------- Type js ------------------------- */
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend develuper', 'Beatmaker', 'C++ dev'],
+    strings: ['Frontend develuper', 'Beatmaker', 'Arduino develuper'],
     typeSpeed: 100,
     backSpeed:100,
     backDelay:1000,
