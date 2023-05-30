@@ -34,6 +34,17 @@
     .about{
         flex-direction: column-reverse ;
     }
+
+    .portfolio{
+
+        & h2{
+            margin-bottom: 3rem;
+        }
+        &__container{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
 }
 
 @media(max-width: 768px){
@@ -99,16 +110,6 @@
         }
     }
 
-    .portfolio{
-
-        & h2{
-            margin-bottom: 3rem;
-        }
-        &__container{
-            grid-template-columns: repeat(2,1fr);
-        }
-    }
-
 }
 
 @media(max-width: 617px){
@@ -122,10 +123,11 @@
     .portfolio{
         &__container{
             grid-template-columns: 1fr;
+            padding: 0 5rem;
         }
 
         &__box{
-            height: 42rem;
+            height: 36rem;
         }
     }
 }
@@ -155,9 +157,11 @@
     }
 
     .portfolio{
-
+        &__container{
+            padding: 0 3rem;
+        }
         &__box{
-            height: 35rem;
+            height: 33rem;
         }
     }
 }
@@ -181,7 +185,9 @@
     }
 
     .portfolio{
-
+        &__container{
+            padding: 0 2rem;
+        }
         &__box{
             height: 27rem;
         }

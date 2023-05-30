@@ -513,6 +513,12 @@ span {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .portfolio h2 {
+    margin-bottom: 3rem;
+  }
+  .portfolio__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 768px) {
   #menu-icon {
@@ -567,12 +573,6 @@ span {
   .services h2 {
     margin-bottom: 3rem;
   }
-  .portfolio h2 {
-    margin-bottom: 3rem;
-  }
-  .portfolio__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 @media (max-width: 617px) {
   .about img {
@@ -580,9 +580,10 @@ span {
   }
   .portfolio__container {
     grid-template-columns: 1fr;
+    padding: 0 5rem;
   }
   .portfolio__box {
-    height: 42rem;
+    height: 36rem;
   }
 }
 @media (max-width: 470px) {
@@ -596,8 +597,11 @@ span {
   .contact__form .input-box input {
     width: 100%;
   }
+  .portfolio__container {
+    padding: 0 3rem;
+  }
   .portfolio__box {
-    height: 35rem;
+    height: 33rem;
   }
 }
 @media (max-width: 378px) {
@@ -614,6 +618,9 @@ span {
   .footer p {
     text-align: center;
     margin-top: 2rem;
+  }
+  .portfolio__container {
+    padding: 0 2rem;
   }
   .portfolio__box {
     height: 27rem;

@@ -42,15 +42,15 @@ window.onscroll = () => {
 
 /* -------------------- Scroll reveal------------------------- */
 
-ScrollReveal({ 
-    //reset: true
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-});
+// ScrollReveal({ 
+//     //reset: true
+//     distance: '80px',
+//     duration: 2000,
+//     delay: 200
+// });
 
-ScrollReveal().reveal('.home__content, .heading, .about__img, .about__content', { origin: 'top' });
-ScrollReveal().reveal('.home__img, .about__content, .services__container, .portfolio__box, .contact__form', { origin: 'bottom' });
+// ScrollReveal().reveal('.home__content, .heading, .about__img, .about__content', { origin: 'top' });
+// ScrollReveal().reveal('.home__img, .about__content, .services__container, .portfolio__box, .contact__form', { origin: 'bottom' });
 
 /* -------------------- Type js ------------------------- */
 
