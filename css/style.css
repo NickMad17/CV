@@ -355,7 +355,6 @@ span {
 .portfolio__box:hover {
   -webkit-box-shadow: 0 0 1rem var(--main-color);
           box-shadow: 0 0 1rem var(--main-color);
-  cursor: pointer;
 }
 .portfolio__box:hover img {
   -webkit-transform: scale(1.1);
