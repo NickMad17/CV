@@ -61,3 +61,55 @@ const typed = new Typed('.multiple-text', {
     backDelay:1000,
     loop: true
 });
+
+/* -------------------- Sand massage ------------------------- */
+
+const TOKEN = "6178052086:AAGw-0HnN46-6dM_SKssZhIUxZpW-FR_oAM";
+const CHAT_ID ="-1001789340734";
+const URL_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+const success = document.getElementById("success");
+const successMessage = document.getElementById("contactHead");
+
+
+
+document.getElementById("form").addEventListener('submit',function(e){
+    e.preventDefault();
+    
+    let massage = `<b>Новая заявка</b> \n`;
+    massage += `<b>Имя: </b> ${ this.name.value  } \n`;
+    massage += `<b>Фамилия: </b> ${ this.firstName.value  }\n`;
+    massage += `<b>Номер телефона: </b> ${ this.mobil.value  }\n`;
+    massage += `<b>Почта: </b> ${ this.email.value  }\n`;
+    massage += `<b>Сообщение: </b> ${ this.text.value  }\n`;
+
+
+    axios.post(URL_API, {
+        chat_id : CHAT_ID,
+        parse_mode: 'html',
+        text: massage
+    })
+    .then((res) =>{
+        this.name.value = "";
+        this.firstName.value = "";
+        this.email.value = "";
+        this.mobil.value = "";
+        this.text.value = "";
+        success.innerText = "Message sent";
+        successMessage.innerText = "Thank you";
+        success.style.background = "rgb(50, 219, 50)";
+        success.style.animation = "rotate-center 0.6s ease-in-out both";
+        successMessage.style.color = "rgb(50, 219, 50)";
+        successMessage.style.animation = "focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
+        
+
+    })
+
+    .catch((err) =>{
+        console.log(err);
+    })
+    
+    .finally(() =>{
+        console.log("end");
+    })
+    
+});

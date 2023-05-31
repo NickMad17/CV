@@ -69,3 +69,27 @@
         transform: translateY(0);
     }
 }
+
+@keyframes rotate-center {
+    0% {
+              transform: rotate(0);
+    }
+    100% {
+              transform: rotate(360deg);
+    }
+}
+
+
+@keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateZ(12px);
+
+              filter: blur(0);
+      opacity: 1;
+    }
+}  

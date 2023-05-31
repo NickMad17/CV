@@ -141,23 +141,23 @@
         </section>
 
         <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me</span></h2>
+            <h2 id="contactHead" class="heading">Contact <span>Me</span></h2>
 
-            <form action="#" class="contact__form">
+            <form id="form" class="contact__form">
                 <div div class="input-box">
-                    <input type="text" placeholder="Full name">
-                    <input type="text" placeholder="Email Address">
+                    <input type="text" name="name" placeholder="Full name" required>
+                    <input type="text" name="firstName" placeholder="Email Address" required>
                 </div>
                 <div div class="input-box">
-                    <input type="number" placeholder="Mobile Number">
-                    <input type="text" placeholder="Email Subject">
+                    <input type="number" name="mobil" placeholder="Mobile Number" required>
+                    <input type="text" name="email" placeholder="Email Subject" required>
                 </div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Massage"></textarea>
+                <textarea name="text" cols="30" rows="10" placeholder="Your Massage"></textarea>
                 <div class="contact__consent">
-                    <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off"/>
+                    <input type="checkbox" id="politics"  value="" autocomplete="off"/ required>
                     <p><span>Consent</span> to the processing of personal data</p>
                 </div>
-                <input type="submit" value="Sand Massage" class="btn contact__btn">
+                <button type="submit" id="success" class="btn contact__btn">Sand Massage</button>
             </form>
         </section>
     </main>
@@ -179,9 +179,16 @@
     
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
+    <!-- Axios -->
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
     <!-- costom js -->
     
     <script src="./js/script.js"></script>
+
+
+    
 
 
 
