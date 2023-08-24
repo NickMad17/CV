@@ -332,6 +332,33 @@ span {
   margin: 1rem 0 3rem;
 }
 
+.loader-container {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: var(--second-bg-color);
+  z-index: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader {
+  height: 12rem;
+}
+
+.display-none {
+  display: none;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
 .portfolio {
   background: var(--second-bg-color);
 }

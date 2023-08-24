@@ -1,3 +1,10 @@
+function renderLouder() {
+    let louder = document.querySelector('.loader-container');
+    window.addEventListener('load', function(){
+        louder.classList.add('display-none');
+    })
+}
+renderLouder();
 /* -------------------- Taggle icon navbar ------------------------- */
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -49,8 +56,8 @@ ScrollReveal({
     delay: 200
 });
 
-ScrollReveal().reveal('.home__content, .heading, .about__img, .about__content', { origin: 'top' });
-ScrollReveal().reveal('.home__img, .about__content, .services__container, .portfolio__box, .contact__form', { origin: 'bottom' });
+ScrollReveal().reveal('.header, x, .heading, .about__img, .about__content', { origin: 'top' });
+ScrollReveal().reveal('.home__img, .home__content, .about__content, .services__container, .portfolio__box, .contact__form', { origin: 'bottom' });
 
 /* -------------------- Type js ------------------------- */
 
