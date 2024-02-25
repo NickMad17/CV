@@ -2,6 +2,11 @@
     html{
         font-size: 55%;
     }
+  .portfolio {
+    &__container{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
 }
 
 @media(max-width: 991px){
@@ -40,9 +45,7 @@
         & h2{
             margin-bottom: 3rem;
         }
-        &__container{
-            grid-template-columns: repeat(2,1fr);
-        }
+
     }
 
 }
@@ -126,9 +129,7 @@
             padding: 0 5rem;
         }
 
-        &__box{
-            height: 36rem;
-        }
+
     }
 }
 
@@ -151,7 +152,7 @@
             & .input-box{
                 & input{
                     width: 100%;
-                } 
+                }
             }
         }
     }
@@ -160,9 +161,7 @@
         &__container{
             padding: 0 3rem;
         }
-        &__box{
-            height: 33rem;
-        }
+
     }
 }
 
@@ -187,9 +186,6 @@
     .portfolio{
         &__container{
             padding: 0 2rem;
-        }
-        &__box{
-            height: 27rem;
         }
     }
 }
