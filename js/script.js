@@ -49,7 +49,7 @@ window.onscroll = () => {
 
 /* -------------------- Scroll reveal------------------------- */
 
-ScrollReveal({ 
+ScrollReveal({
     //reset: true
     distance: '80px',
     duration: 2000,
@@ -81,13 +81,13 @@ const successMessage = document.getElementById("contactHead");
 
 document.getElementById("form").addEventListener('submit',function(e){
     e.preventDefault();
-    
-    let massage = `<b>Новая заявка</b> \n`;
+
+    let massage = `<b>Новая заявка</b> \n\n`;
     massage += `<b>Имя: </b> ${ this.name.value  } \n`;
     massage += `<b>Фамилия: </b> ${ this.firstName.value  }\n`;
     massage += `<b>Номер телефона: </b> ${ this.mobil.value  }\n`;
-    massage += `<b>Почта: </b> ${ this.email.value  }\n`;
-    massage += `<b>Сообщение: </b> ${ this.text.value  }\n`;
+    massage += `<b>Почта или мессенждер: </b> ${ this.email.value  }\n`;
+    massage += `${ this.text.value ? `<b>Сообщение: ${this.text.value}</b> ` : '' }\n`;
 
 
     axios.post(URL_API, {
@@ -101,22 +101,22 @@ document.getElementById("form").addEventListener('submit',function(e){
         this.email.value = "";
         this.mobil.value = "";
         this.text.value = "";
-        success.innerText = "Message sent";
-        successMessage.innerText = "Thank you";
+        success.innerText = "Отправленно";
+        successMessage.innerText = "Спасибо, я свяжусь с вами";
         success.style.background = "rgb(50, 219, 50)";
         success.style.animation = "rotate-center 0.6s ease-in-out both";
         successMessage.style.color = "rgb(50, 219, 50)";
         successMessage.style.animation = "focus-in-contract-bck 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
-        
+
 
     })
 
     .catch((err) =>{
         console.log(err);
     })
-    
+
     .finally(() =>{
         console.log("end");
     })
-    
+
 });

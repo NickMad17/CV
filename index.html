@@ -2,215 +2,234 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="./css/style.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>CV</title>
 </head>
 <body>
-    <div class="loader-container">
-        <img src="./img/loader_2.svg" alt="loader" class="loader">
-    </div>
+<div class="loader-container">
+    <img alt="loader" class="loader" src="./img/loader_2.svg">
+</div>
 
-    <header class="header">
-        <a href="index.html" class="logo">Portfolio</a>
+<header class="header">
+    <a class="logo" href="index.html">Portfolio</a>
+    
+    <i class='bx bx-menu' id="menu-icon"></i>
+    
+    <nav class="navbar">
+        <a class="active" href="#home" style="--i:1">Home</a>
+        <a href="#about" style="--i:2">About</a>
+        <a href="#services" style="--i:3">Services</a>
+        <a href="#portfolio" style="--i:4">Portfolio</a>
+        <a href="#contact" style="--i:5">Contact</a>
+    </nav>
+</header>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="#home" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2">About</a>
-            <a href="#services" style="--i:3">Services</a>
-            <a href="#portfolio" style="--i:4">Portfolio</a>
-            <a href="#contact" style="--i:5">Contact</a>
-        </nav>
-    </header>
-
-    <main class="main">
-
-        <!-- Home-section -->
-
-        <section class="home" id="home">
-            <div class="home__content">
-                <h2>Hello, it's Me</h2>
-                <h1>Maady</h1>
-                <h2>And I'm a <br>
+<main class="main">
+    
+    <!-- Home-section -->
+    
+    <section class="home" id="home">
+        <div class="home__content">
+            <h2>Привет, меня зовут</h2>
+            <h1>Maady</h1>
+            <h2>так же я<br>
                 <span class="multiple-text"></span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id iste amet eaque quia perspiciatis eum architecto veritatis quaerat suscipit illo? Cupiditate nobis facere quisquam nisi in odio officiis neque natus?</p>
+            <p>Добро пожаловать на мой сайт-портфолио! Здесь вы найдете мои работы и проекты в области веб-разработки, и
+                не только. Если вы хотите найти баланс между качеством и творчеством, создать что-то новое
+                не забывая про основы... Погрузитесь в мир моего творчества и возможно, мы сможем вместе
+                воплотить вашу мечту в реальность.</p>
             
-
-                <div class="social-media">
-                    <a href="https://vk.com/madymadison" style="--i:7"><i class='bx bxl-vk'></i></a>
-                    <a href="https://instagram.com/_mad_niks_?igshid=NGExMmI2YTkyZg==" style="--i:8"><i class='bx bxl-instagram-alt' ></i></a>
-                    <a href="https://t.me/maady55" style="--i:9"><i class='bx bxl-telegram' ></i></a>
-                    <a href="https://github.com/NickMad17" style="--i:10"><i class='bx bxl-github' ></i></a>
-                </div>
-
-                <button href="#" class="btn home__btn">Download CV</button>
-
+            <div class="social-media">
+                <a href="https://vk.com/madymadison" style="--i:7"><i class='bx bxl-vk'></i></a>
+                <a href="https://instagram.com/_mad_niks_?igshid=NGExMmI2YTkyZg==" style="--i:8"><i
+                        class='bx bxl-instagram-alt'></i></a>
+                <a href="https://t.me/maady55" style="--i:9"><i class='bx bxl-telegram'></i></a>
+                <a href="https://github.com/NickMad17" style="--i:10"><i class='bx bxl-github'></i></a>
             </div>
-
-            <div class="home__img">
-                <img src="./img/home_2.png" alt="avatar">
-            </div>
-
-        </section>
-
-        <!-- About-section -->
-
-        <section class="about" id="about">
-            <div class="about__img">
-                <img src="./img/home_2.png" alt="Тут будет мое фото">
-            </div>
-            <div class="about__content">
-                <h2 class="heading">About <span>Me</span></h2>
-
-                <h3>Frontend Develuper!</h3>
-
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur natus repellendus veniam aperiam accusantium recusandae soluta voluptatum mollitia. Rem esse distinctio architecto repudiandae, accusamus, quo facere fugiat deserunt earum unde corrupti cumque sapiente cupiditate quod consectetur ea sint? Soluta quo asperiores sit odit earum sed temporibus.</p>
-                <button class="btn about__btn">Read more</button>
-            </div>
-        </section>
-
-        <!-- Services-section -->
-
-        <section class="services" id="services">
-            <h2 class="heading">My <span>Services</span></h2>
-            <div class="services__container">
-                <div class="services__box">
+            
+            <button class="btn home__btn" href="#">Скачать резюме</button>
+        
+        </div>
+        
+        <div class="home__img">
+            <img alt="avatar" src="./img/home_2.png">
+        </div>
+    
+    </section>
+    
+    <!-- About-section -->
+    
+    <section class="about" id="about">
+        <div class="about__img">
+            <img alt="Тут будет мое фото" src="./img/home_2.png">
+        </div>
+        <div class="about__content">
+            <h2 class="heading">Обо <span>Мне</span></h2>
+            
+            
+            <p>Я помогаю людям воплотить их идеи в жизнь, используя мои навыки и знания в области веб-разработки.
+                Всегда стремлюсь к совершенным и оригинальным решениям, чтобы каждый проект был уникален и
+                соответствовал ожиданиям заказчика.</p>
+            
+            <p>Кроме работы, я также активно занимаюсь спортом и уделяю внимание психологии. Я верю, что
+                позитивный настрой и здоровый образ жизни могут вдохновлять на новые творческие идеи и помогают
+                сохранить баланс между работой и личной жизнью.</p>
+            <p>С радостью готов поделиться своим опытом и знаниями, а также помочь в реализации любых интересных
+                проектов. Давайте создадим что-то удивительное вместе!</p>
+            <button class="btn about__btn">Подробнее</button>
+        </div>
+    </section>
+    
+    <!-- Services-section -->
+    
+    <section class="services" id="services">
+        <h2 class="heading">Мои <span>Сервисы</span></h2>
+        <div class="services__container">
+            <div class="services__box">
+                <div>
                     <i class='bx bx-code-alt'></i>
-                    <h3>Web Development</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit enim excepturi quo laboriosam adipisci rerum facilis sequi non nobis esse.</p>
-                    <a href="#portfolio" class="btn services__btn">Read more</a>
+                    <h3>Веб разработка</h3>
+                    <p>Я в web-разработке уже более трёх лет, и за это время накопил достаточный опыт для создания
+                        многофункциональных приложений.</p>
                 </div>
-
-                <div class="services__box">
+                <a class="btn services__btn" href="#portfolio">Подробнее</a>
+            </div>
+            
+            <div class="services__box">
+                <div>
                     <i class='bx bxl-deezer'></i>
-                    <h3>Sound Design</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit enim excepturi quo laboriosam adipisci rerum facilis sequi non nobis esse.</p>
-                    <a href="https://nickmad17.github.io/MySound-Web/" class="btn services__btn" >Read more</a>
+                    <h3>SnippY</h3>
+                    <p>SnyppY - это мой продукт, посвящённый созданию коротких роликов, с целью развития молодых
+                        музыкантов.</p>
                 </div>
-
-                <div class="services__box">
-                    <i class='bx bxl-c-plus-plus' ></i>
-                    <h3>Microcontrollers</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit enim excepturi quo laboriosam adipisci rerum facilis sequi non nobis esse.</p>
-                    <a href="#cpp" class="btn services__btn">Read more</a>
-                </div>
+                <a class="btn services__btn" href="https://nickmad17.github.io/MySound-Web/">Read more</a>
             </div>
-        </section>
-        <!-- Portfolio-section -->
-        <section class="portfolio po" id="portfolio">
-            <h2 class="heading" id="web">Web <span>Projects</span> </h2>
-
-            <div class="portfolio__container">
-
-                <div class="portfolio__box ">
-                    <img src="img/project/web-project/fl.png" alt="Beats project">
-                    <div class="portfolio__anotation">
-                        <h4>Музыкальный сервис</h4>
-                        <p>Музыкальный сервис с моими проектами. Если кому-то интересны мои услуги по написанию битов, так же обращатесь ниже)</p>
-                        <a href="https://github.com/NickMad17/MySound-Web.git"><i class='bx bx-link'></i></a>
-                    </div>
+            
+            <div class="services__box">
+                <div>
+                    <i class='bx bxl-c-plus-plus'></i>
+                    <h3>Internet of Things</h3>
+                    <p>Веб технологии так же вдохновили меня на создание "Интернет вещей". В данный момент это имеет
+                        большой спрос, что доказывают те же самокаты.</p>
                 </div>
-                
-                <div class="portfolio__box ">
-                    <img src="././img/project/web-project/game.png" alt="Calc project">
-                    <div style="position: absolute; background: rgba(0,0,0,0.53); z-index: 900; width: 100%; height: 100%;"></div>
-                    <div class="portfolio__anotation">
-                        <h4>Калькулятор</h4>
-                        <p>Простенький проект написанный на ванильном js. Калькулятор может вычеслить твой возраст вплодь до секунд.</p>
-                        <a href="https://github.com/NickMad17/Age-calculator"><i class='bx bx-link'></i></a>
-                    </div>
-                </div>
-                
-                <div class="portfolio__box ">
-                    <img src="././img/project/web-project/games.jpg" alt="Games project">
-                    <div class="portfolio__anotation">
-                        <h4>Игры</h4>
-                        <p>На этой платформе собраны все мои игры созданные на js.</p>
-                        <a href="https://github.com/NickMad17/2-nd-course-hw"><i class='bx bx-link'></i></a>
-                    </div>
-                </div>
-
+                <a class="btn services__btn" href="#cpp">Read more</a>
             </div>
-        </section>
-
-
-        <section class="portfolio" id="cpp">
-            <h2 class="heading">Microcontroller <span>Projects</span> </h2>
-            <div class="portfolio__container">
-                <div class="portfolio__box ">
-                    <img src="././img/project/web-project/lift_2.jpg" alt="Lift project">
-                    <div class="portfolio__anotation">
-                        <h4>lift</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, delectus.</p>
-                        <a href="https://github.com/NickMad17/Arduino-lift"><i class='bx bx-link'></i></a>
-                    </div>
-                </div>
-
-                <div class="portfolio__box ">
-                    <img src="././img/project/web-project/axel.jpg" alt="axelerometr project">
-                    <div class="portfolio__anotation">
-                        <h4>lift</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, delectus.</p>
-                        <a href="https://github.com/NickMad17/Practic"><i class='bx bx-link'></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <h2 id="contactHead" class="heading">Contact <span>Me</span></h2>
-
-            <form id="form" class="contact__form">
-                <div div class="input-box">
-                    <input type="text" name="name" placeholder="Last Name" required>
-                    <input type="text" name="firstName" placeholder="First Name" required>
-                </div>
-                <div div class="input-box">
-                    <input type="number" name="mobil" placeholder="Mobile Number" required>
-                    <input type="text" name="email" placeholder="Email address" required>
-                </div>
-                <textarea name="text" cols="30" rows="10" placeholder="Your Massage"></textarea>
-                <div class="contact__consent">
-                    <input type="checkbox" id="politics"  value="" autocomplete="off" required>
-                    <p><span>Consent</span> to the processing of personal data</p>
-                </div>
-                <button type="submit" id="success" class="btn contact__btn">Send Massage</button>
-            </form>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer__text">
-            <p>Copyright &copy 2023 by Maady | All Rights Reserved.</p>
+            
         </div>
-        <div class="footer__icon">
-            <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+    </section>
+    
+    <!-- Portfolio-section -->
+    
+    <section class="portfolio po" id="portfolio">
+        <h2 class="heading" id="web">Web <span>Projects</span></h2>
+        
+        <div class="portfolio__container">
+            
+            <div class="portfolio__box ">
+                <img alt="Beats project" src="img/project/web-project/fl.png">
+                <a href="https://github.com/NickMad17/MySound-Web.git" class="portfolio__anotation">
+                    <h4>SnippY</h4>
+                    <p class="portfolio__anotation-text">SnyppY - это мой продукт, посвящённый созданию коротких роликов, с целью развития молодых
+                        музыкантов.</p>
+                </a>
+            </div>
+            
+            <div class="portfolio__box ">
+                <img alt="Calc project" src="././img/project/web-project/game.png">
+                <div style="position: absolute; background: rgba(0,0,0,0.53); z-index: 900; width: 100%; height: 100%;"></div>
+                <div class="portfolio__anotation">
+                    <h4>Калькулятор</h4>
+                    <p>Простенький проект написанный на ванильном js. Калькулятор может вычеслить твой возраст вплодь до
+                        секунд.</p>
+                    <a href="https://github.com/NickMad17/Age-calculator"><i class='bx bx-link'></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio__box ">
+                <img alt="Games project" src="././img/project/web-project/games.jpg">
+                <div class="portfolio__anotation">
+                    <h4>Игры</h4>
+                    <p>На этой платформе собраны все мои игры созданные на js.</p>
+                    <a href="https://github.com/NickMad17/2-nd-course-hw"><i class='bx bx-link'></i></a>
+                </div>
+            </div>
+        
         </div>
-    </footer>
+    </section>
     
-    <!-- Scroll reveal -->
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!-- Typed js -->
     
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-    <!-- Axios -->
-
-    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-
-    <!-- costom js -->
+    <section class="portfolio" id="cpp">
+        <h2 class="heading">Microcontroller <span>Projects</span></h2>
+        <div class="portfolio__container">
+            <div class="portfolio__box ">
+                <img alt="Lift project" src="././img/project/web-project/lift_2.jpg">
+                <div class="portfolio__anotation">
+                    <h4>lift</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, delectus.</p>
+                    <a href="https://github.com/NickMad17/Arduino-lift"><i class='bx bx-link'></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio__box ">
+                <img alt="axelerometr project" src="././img/project/web-project/axel.jpg">
+                <div class="portfolio__anotation">
+                    <h4>lift</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, delectus.</p>
+                    <a href="https://github.com/NickMad17/Practic"><i class='bx bx-link'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
     
-    <script src="./js/script.js"></script>
+    <section class="contact" id="contact">
+        <h2 class="heading" id="contactHead">Связаться</h2>
+        
+        <form class="contact__form" id="form">
+            <div class="input-box" div>
+                <input name="name" placeholder="Имя" required type="text">
+                <input name="firstName" placeholder="Фамилия" required type="text">
+            </div>
+            <div class="input-box" div>
+                <input name="mobil" placeholder="Телефон" required type="tel">
+                <input name="email" placeholder="Почта или мессенджер" required type="text">
+            </div>
+            <textarea cols="30" name="text" placeholder="Ваше сообщение" rows="10"></textarea>
+            <div class="contact__consent">
+                <input autocomplete="off" id="politics" required type="checkbox" value="">
+                <p><span>Согласие</span> на обработку персональных данных</p>
+            </div>
+            <button class="btn contact__btn" id="success" type="submit">Отправить</button>
+        </form>
+    </section>
+</main>
 
+<footer class="footer">
+    <div class="footer__text">
+        <p>Copyright &copy 2023 by Maady | All Rights Reserved.</p>
+    </div>
+    <div class="footer__icon">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
 
-    
+<!-- Scroll reveal -->
 
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- Typed js -->
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-- Axios -->
+
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+<!-- costom js -->
+
+<script src="./js/script.js"></script>
 
 
 </body>
